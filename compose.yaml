@@ -6,6 +6,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
       # <Host Port>:<Container Port>
-      - ${PORT:-3001}:3001
+      - 127.0.0.1:${PORT:-3001}:3001
     restart: unless-stopped
     privileged: true
